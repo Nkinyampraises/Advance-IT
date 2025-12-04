@@ -1,0 +1,536 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css" />
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            ADVANCE IT GROUP
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+      
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productDropdown">
+                            <li><a class="dropdown-item" href="https://advance-it-group.biz/software-testing-qa">Aurore sis</a></li>
+                            <li><a class="dropdown-item" href="https://datacentral.tech">Data Central</a></li>
+                            <li><a class="dropdown-item" href="https://erp.auroresuite.com">Aurore ERP</a></li>
+                        </ul>
+                    </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+       </nav>
+      
+    <section class="contact-hero mx-3 mx-md-3 mx-lg-3 rounded" >
+        <div class="container">
+            <div class="row justify-content-center"  data-aos="zoom-in">
+                <div class="col-md-8 text-center">
+                    <h1 class="text-white">Welcome to our News area</h1>
+                    <p class="text-white">Stay informed with what's going on with Advance-IT. Latest updates, insights, and success stories from the world of enterprise technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="gridView" class="grid-view">
+        <div class="container py-5" data-aos="zoom-in">
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="news-card" onclick="showDetail(1)">
+                        <div class="image-wrapper">
+                            <img src="assets/images/first.jpeg" alt="10 Strategies for Business Growth in 2025">
+                            <span class="badge-category">Financial Management</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">10 Strategies for Business Growth in 2025</h5>
+                            <p class="card-text">Learn how successful entrepreneurs and visionaries craft a winning strategy for sustainable business growth...</p>
+                            <div class="card-footer-custom">
+                                <div class="author-info">
+                                    <div class="author-avatar">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                            <path d="M6 6C7.1 6 8 5.1 8 4C8 2.9 7.1 2 6 2C4.9 2 4 2.9 4 4C4 5.1 4.9 6 6 6ZM6 7C4.67 7 2 7.67 2 9V10H10V9C10 7.67 7.33 7 6 7Z" fill="#666"/>
+                                        </svg>
+                                    </div>
+                                    <span class="author-name">RosaWil</span>
+                                </div>
+                                <div class="date-info">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M11.0833 2.33334H10.5V1.16667H9.33333V2.33334H4.66667V1.16667H3.5V2.33334H2.91667C2.275 2.33334 1.75583 2.85834 1.75583 3.5L1.75 11.0833C1.75 11.725 2.275 12.25 2.91667 12.25H11.0833C11.725 12.25 12.25 11.725 12.25 11.0833V3.5C12.25 2.85834 11.725 2.33334 11.0833 2.33334ZM11.0833 11.0833H2.91667V5.83334H11.0833V11.0833Z" fill="#0066FF"/>
+                                    </svg>
+                                    <span class="date-text">Mar 07, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="news-card" onclick="showDetail(2)">
+                        <div class="image-wrapper">
+                            <img src="assets/images/second.jpeg" alt="Navigating Tax Season: Tips for Small Business">
+                            <span class="badge-category"> Management</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Navigating Tax Season: Tips for Small Business</h5>
+                            <p class="card-text">Learn how successful entrepreneurs leverage technology to gain a competitive advantage in the market...</p>
+                            <div class="card-footer-custom">
+                                <div class="author-info">
+                                    <div class="author-avatar">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                            <path d="M6 6C7.1 6 8 5.1 8 4C8 2.9 7.1 2 6 2C4.9 2 4 2.9 4 4C4 5.1 4.9 6 6 6ZM6 7C4.67 7 2 7.67 2 9V10H10V9C10 7.67 7.33 7 6 7Z" fill="#666"/>
+                                        </svg>
+                                    </div>
+                                    <span class="author-name">soilo</span>
+                                </div>
+                                <div class="date-info">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M11.0833 2.33334H10.5V1.16667H9.33333V2.33334H4.66667V1.16667H3.5V2.33334H2.91667C2.275 2.33334 1.75583 2.85834 1.75583 3.5L1.75 11.0833C1.75 11.725 2.275 12.25 2.91667 12.25H11.0833C11.725 12.25 12.25 11.725 12.25 11.0833V3.5C12.25 2.85834 11.725 2.33334 11.0833 2.33334ZM11.0833 11.0833H2.91667V5.83334H11.0833V11.0833Z" fill="#0066FF"/>
+                                    </svg>
+                                    <span class="date-text">sep 08, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="news-card" onclick="showDetail(3)">
+                        <div class="image-wrapper">
+                            <img src="assets/images/third.jpeg" alt="The Power of Data Analytics in Business">
+                            <span class="badge-category">Enterprise solutions</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">The Power of Data Analytics in Business</h5>
+                            <p class="card-text">Explore the significance of innovation in modern business and how data drives decision making...</p>
+                            <div class="card-footer-custom">
+                                <div class="author-info">
+                                    <div class="author-avatar">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                            <path d="M6 6C7.1 6 8 5.1 8 4C8 2.9 7.1 2 6 2C4.9 2 4 2.9 4 4C4 5.1 4.9 6 6 6ZM6 7C4.67 7 2 7.67 2 9V10H10V9C10 7.67 7.33 7 6 7Z" fill="#666"/>
+                                        </svg>
+                                    </div>
+                                    <span class="author-name">loveline</span>
+                                </div>
+                                <div class="date-info">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M11.0833 2.33334H10.5V1.16667H9.33333V2.33334H4.66667V1.16667H3.5V2.33334H2.91667C2.275 2.33334 1.75583 2.85834 1.75583 3.5L1.75 11.0833C1.75 11.725 2.275 12.25 2.91667 12.25H11.0833C11.725 12.25 12.25 11.725 12.25 11.0833V3.5C12.25 2.85834 11.725 2.33334 11.0833 2.33334ZM11.0833 11.0833H2.91667V5.83334H11.0833V11.0833Z" fill="#0066FF"/>
+                                    </svg>
+                                    <span class="date-text">feb 07, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="news-card" onclick="showDetail(4)">
+                        <div class="image-wrapper">
+                            <img src="assets/images/forth.jpeg" alt="How to Create a Winning Marketing Plan">
+                            <span class="badge-category">digital solutions</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">How to Create a Winning Marketing Plan</h5>
+                            <p class="card-text">Discover strategies for achieving personal and professional success as an entrepreneur in digital age...</p>
+                            <div class="card-footer-custom">
+                                <div class="author-info">
+                                    <div class="author-avatar">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                            <path d="M6 6C7.1 6 8 5.1 8 4C8 2.9 7.1 2 6 2C4.9 2 4 2.9 4 4C4 5.1 4.9 6 6 6ZM6 7C4.67 7 2 7.67 2 9V10H10V9C10 7.67 7.33 7 6 7Z" fill="#666"/>
+                                        </svg>
+                                    </div>
+                                    <span class="author-name"> William</span>
+                                </div>
+                                <div class="date-info">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M11.0833 2.33334H10.5V1.16667H9.33333V2.33334H4.66667V1.16667H3.5V2.33334H2.91667C2.275 2.33334 1.75583 2.85834 1.75583 3.5L1.75 11.0833C1.75 11.725 2.275 12.25 2.91667 12.25H11.0833C11.725 12.25 12.25 11.725 12.25 11.0833V3.5C12.25 2.85834 11.725 2.33334 11.0833 2.33334ZM11.0833 11.0833H2.91667V5.83334H11.0833V11.0833Z" fill="#0066FF"/>
+                                    </svg>
+                                    <span class="date-text">jan 08, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="news-card" onclick="showDetail(5)">
+                        <div class="image-wrapper">
+                            <img src="assets/images/fifth.jpeg" alt="Digital Transformation: Future of Work">
+                            <span class="badge-category">Technology Trends</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Digital Transformation: Future of Work</h5>
+                            <p class="card-text">Understanding the impact of digital transformation on modern workplaces and remote collaboration...</p>
+                            <div class="card-footer-custom">
+                                <div class="author-info">
+                                    <div class="author-avatar">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                            <path d="M6 6C7.1 6 8 5.1 8 4C8 2.9 7.1 2 6 2C4.9 2 4 2.9 4 4C4 5.1 4.9 6 6 6ZM6 7C4.67 7 2 7.67 2 9V10H10V9C10 7.67 7.33 7 6 7Z" fill="#666"/>
+                                        </svg>
+                                    </div>
+                                    <span class="author-name">Rosalina</span>
+                                </div>
+                                <div class="date-info">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M11.0833 2.33334H10.5V1.16667H9.33333V2.33334H4.66667V1.16667H3.5V2.33334H2.91667C2.275 2.33334 1.75583 2.85834 1.75583 3.5L1.75 11.0833C1.75 11.725 2.275 12.25 2.91667 12.25H11.0833C11.725 12.25 12.25 11.725 12.25 11.0833V3.5C12.25 2.85834 11.725 2.33334 11.0833 2.33334ZM11.0833 11.0833H2.91667V5.83334H11.0833V11.0833Z" fill="#0066FF"/>
+                                    </svg>
+                                    <span class="date-text">Mar 07, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="news-card" onclick="showDetail(6)">
+                        <div class="image-wrapper">
+                            <img src="assets/images/sisth.jpeg" alt="Building Effective Teams in Remote Work">
+                            <span class="badge-category">Leadership</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Building Effective Teams in Remote Work</h5>
+                            <p class="card-text">Best practices for managing and leading distributed teams successfully in the modern workplace...</p>
+                            <div class="card-footer-custom">
+                                <div class="author-info">
+                                    <div class="author-avatar">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                            <path d="M6 6C7.1 6 8 5.1 8 4C8 2.9 7.1 2 6 2C4.9 2 4 2.9 4 4C4 5.1 4.9 6 6 6ZM6 7C4.67 7 2 7.67 2 9V10H10V9C10 7.67 7.33 7 6 7Z" fill="#666"/>
+                                        </svg>
+                                    </div>
+                                    <span class="author-name">success</span>
+                                </div>
+                                <div class="date-info">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M11.0833 2.33334H10.5V1.16667H9.33333V2.33334H4.66667V1.16667H3.5V2.33334H2.91667C2.275 2.33334 1.75583 2.85834 1.75583 3.5L1.75 11.0833C1.75 11.725 2.275 12.25 2.91667 12.25H11.0833C11.725 12.25 12.25 11.725 12.25 11.0833V3.5C12.25 2.85834 11.725 2.33334 11.0833 2.33334ZM11.0833 11.0833H2.91667V5.83334H11.0833V11.0833Z" fill="#0066FF"/>
+                                    </svg>
+                                    <span class="date-text">May 07, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="detailView" class="detail-view" style="display: none;">
+        <div class="container py-5">
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-8">
+                    <div class="card detail-card" id="detailContent">
+                        <!-- Article details will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: none;">
+        <div id="full-content-1">
+            <p>Learn how successful entrepreneurs and visionaries craft a winning strategy for sustainable business growth in the coming year. This comprehensive guide covers everything from market analysis to implementation.</p>
+            <h5>Market Analysis</h5>
+            <p>Understanding your market position is crucial for identifying growth opportunities. We'll explore techniques for analyzing competitors, identifying trends, and positioning your business for success.</p>
+            <h5>Digital Transformation</h5>
+            <p>Leveraging technology to streamline operations and reach new customers is no longer optional. Learn about the most effective digital tools and platforms for business growth.</p>
+            <h5>Team Development</h5>
+            <p>Your team is your greatest asset. Discover strategies for hiring, training, and retaining top talent while fostering a culture of innovation and collaboration.</p>
+        </div>
+
+        <div id="full-content-2">
+            <p>Tax season can be overwhelming for small business owners, but with the right preparation and knowledge, you can navigate it successfully and maximize your deductions.</p>
+            <h5>Record Keeping</h5>
+            <p>Maintain organized financial records throughout the year to make tax preparation smoother. We recommend using cloud-based accounting software for real-time tracking.</p>
+            <h5>Deduction Strategies</h5>
+            <p>Identify all eligible business expenses that can be deducted, including home office expenses, equipment purchases, travel costs, and professional development.</p>
+            <h5>Tax Credits</h5>
+            <p>Don't miss out on available tax credits for small businesses, including research and development credits, energy efficiency incentives, and hiring credits.</p>
+        </div>
+
+        <div id="full-content-3">
+            <p>Data analytics has revolutionized how businesses make decisions. Learn how to harness the power of data to gain competitive advantages and drive business growth.</p>
+            <h5>Data Collection Methods</h5>
+            <p>Effective data analytics starts with proper data collection. We explore both quantitative and qualitative data collection methods suitable for businesses of all sizes.</p>
+            <h5>Analytics Tools</h5>
+            <p>From simple spreadsheet analysis to advanced machine learning platforms, discover the tools that can help you extract meaningful insights from your data.</p>
+            <h5>Decision Making</h5>
+            <p>Transform data insights into actionable strategies. Learn how to create data-driven decision-making processes throughout your organization.</p>
+        </div>
+
+        <div id="full-content-4">
+            <p>A well-crafted marketing plan is essential for business success. This guide takes you through the step-by-step process of creating a marketing plan that delivers results.</p>
+            <h5>Market Research</h5>
+            <p>Before creating your plan, conduct thorough market research to understand your target audience, competitors, and market conditions.</p>
+            <h5>Channel Selection</h5>
+            <p>Choose the right marketing channels for your business, whether it's social media, content marketing, email campaigns, or traditional advertising.</p>
+            <h5>Budget Allocation</h5>
+            <p>Learn how to allocate your marketing budget effectively across different channels and campaigns for maximum return on investment.</p>
+        </div>
+
+        <div id="full-content-5">
+            <p>The workplace is evolving rapidly with digital transformation. Explore how businesses are adapting to new technologies and changing work patterns.</p>
+            <h5>Remote Work Infrastructure</h5>
+            <p>Building a robust infrastructure to support remote and hybrid work models, including communication tools, project management platforms, and cybersecurity measures.</p>
+            <h5>Digital Skills Development</h5>
+            <p>Upskilling your workforce for the digital age. Identify key digital competencies needed for future success and create training programs to develop them.</p>
+            <h5>Change Management</h5>
+            <p>Successfully implementing digital transformation requires effective change management strategies to ensure employee buy-in and smooth adoption.</p>
+        </div>
+
+        <div id="full-content-6">
+            <p>Remote work presents unique challenges for team building and collaboration. Learn proven strategies for creating cohesive, productive remote teams.</p>
+            <h5>Communication Protocols</h5>
+            <p>Establish clear communication guidelines and schedules to ensure team members stay connected and informed regardless of location.</p>
+            <h5>Virtual Team Building</h5>
+            <p>Creative activities and practices to foster team spirit and collaboration in a virtual environment, from online games to virtual coffee breaks.</p>
+            <h5>Performance Management</h5>
+            <p>Adapt performance evaluation and feedback systems for remote teams, focusing on outcomes rather than hours worked.</p>
+        </div>
+    </div>
+
+<section class="cta py-5">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6" data-aos="fade-right">
+                <h2 class="fw-bold display-5">Obtain further information by making a contact with our experienced IT staffs.</h2>
+                <p class="fw-bold mt-4">Ready to boost your performance?</p>
+                <p class="text-muted">Let's discuss how we can help transform your business</p>
+            </div>
+
+            <div class="col-md-6 text-center" data-aos="fade-left">
+                <i class="fas fa-phone-alt fs-1 text-primary"></i>
+                <p class="mt-3 mb-0">Reach out now!</p>
+                <h3 class="fw-bold my-2">+237 696 099 939</h3>
+                <a href="#" class="btn btn-primary mt-3">Contact us</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer pt-5 pb-4">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4 mb-4 text-white" data-aos="fade-up">
+                <p>Empowering businesses through innovative IT Solutions since 2015</p>
+                <ul class="list-unstyled">
+                    <li class="d-flex mb-2 text-white">
+                        <i class="fas fa-map-marker-alt me-3 pt-1"></i>
+                        <span>2593, rue 6.250 Oyom-Abang, Nkolbisson Carrefour Tsimi, Yaounde</span>
+                    </li>
+                    <li class="d-flex mb-2 text-white">
+                        <i class="fas fa-phone-alt me-3 pt-1"></i>
+                        <span>+237 696 009 939</span>
+                    </li>
+                    <li class="d-flex text-white">
+                        <i class="fas fa-envelope me-3 pt-1"></i>
+                        <span>info@advance-it-group.biz</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <h5 class="fw-bold mb-4 text-white">Quick links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                    <li class="mb-2"><a href="" class="text-white text-decoration-none">Products</a></li>
+                    <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                    <li class="mb-2"><a href="news.html" class="text-white text-decoration-none">News</a></li>
+                    <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <h5 class="fw-bold mb-4 text-white">Products</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Aurore ERP</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none"> Data Central/a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Aurore sis</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <h5 class="fw-bold mb-4 text-white">Services</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Software Development</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Consulting</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Digital Intergration</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr class="my-6">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6 mb-3 mb-md-0">
+                <a href="#" class="btn btn-light rounded-circle me-6">
+                    <i class="fab fa-facebook-f text-primary"></i>
+                </a>
+                <a href="#" class="btn btn-light rounded-circle">
+                    <i class="fab fa-linkedin-in text-primary"></i>
+                </a>
+            </div>
+
+            <div class="col-md-6 text-md-end text-info">
+                <p class="mb-0 small">2025 Advance-it-Group all rights reserved</p>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 1200,
+    once: false,
+    mirror: true
+});
+</script>
+
+    <script>
+        
+        function showDetail(articleId) {
+            console.log('Clicked article ID:', articleId);
+            const allCards = document.querySelectorAll('.news-card');
+            let selectedCard = null;
+            allCards.forEach((card) => {
+                const onclick = card.getAttribute('onclick');
+                if (onclick && onclick === `showDetail(${articleId})`) {
+                    selectedCard = card;
+                }
+            });
+            
+            if (!selectedCard) {
+                console.error('Card not found for ID:', articleId);
+                return;
+            }
+            const image = selectedCard.querySelector('img').src;
+            const imageAlt = selectedCard.querySelector('img').alt;
+            const category = selectedCard.querySelector('.badge-category').textContent.trim();
+            const title = selectedCard.querySelector('.card-title').textContent.trim();
+            const excerpt = selectedCard.querySelector('.card-text').textContent.trim();
+            const author = selectedCard.querySelector('.author-name').textContent.trim();
+            const date = selectedCard.querySelector('.date-text').textContent.trim();
+
+            const fullContentDiv = document.getElementById(`full-content-${articleId}`);
+            if (!fullContentDiv) {
+                console.error('Full content not found for article ID:', articleId);
+                return;
+            }
+            const fullContent = fullContentDiv.innerHTML;
+
+            let relatedArticlesHTML = '<h3 class="mt-5 mb-4">Related Articles</h3><div class="row">';
+            let relatedCount = 0;
+            
+            allCards.forEach((card) => {
+                if (card !== selectedCard && relatedCount < 3) {
+                    const relatedImg = card.querySelector('img').src;
+                    const relatedTitle = card.querySelector('.card-title').textContent.trim();
+                    const relatedOnclick = card.getAttribute('onclick');
+                    
+                    const match = relatedOnclick.match(/showDetail\((\d+)\)/);
+                    if (match) {
+                        const relatedId = match[1];
+                        
+                        relatedArticlesHTML += `
+                            <div class="col-md-4 mb-4">
+                                <div class="related-card" onclick="showDetail(${relatedId})" style="cursor: pointer;">
+                                    <img src="${relatedImg}" alt="${relatedTitle}" class="img-fluid rounded" style="height: 150px; width: 100%; object-fit: cover; margin-bottom: 10px;">
+                                    <h6 style="font-size: 14px; font-weight: 600;">${relatedTitle}</h6>
+                                </div>
+                            </div>
+                        `;
+                        relatedCount++;
+                    }
+                }
+            });
+            
+            relatedArticlesHTML += '</div>';
+
+            const detailHTML = `
+                <div class="image-wrapper">
+                    <img src="${image}" alt="${imageAlt}" class="img-fluid rounded" style="width: 100%; height: 400px; object-fit: cover;">
+                    <span class="badge-category">${category}</span>
+                </div>
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="date-info d-flex align-items-center">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M11.0833 2.33334H10.5V1.16667H9.33333V2.33334H4.66667V1.16667H3.5V2.33334H2.91667C2.275 2.33334 1.75583 2.85834 1.75583 3.5L1.75 11.0833C1.75 11.725 2.275 12.25 2.91667 12.25H11.0833C11.725 12.25 12.25 11.725 12.25 11.0833V3.5C12.25 2.85834 11.725 2.33334 11.0833 2.33334ZM11.0833 11.0833H2.91667V5.83334H11.0833V11.0833Z" fill="#0066FF"/>
+                            </svg>
+                            <span class="date-text ms-2">${date}</span>
+                        </div>
+                        <div class="author-info d-flex align-items-center">
+                            <div class="author-avatar">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M6 6C7.1 6 8 5.1 8 4C8 2.9 7.1 2 6 2C4.9 2 4 2.9 4 4C4 5.1 4.9 6 6 6ZM6 7C4.67 7 2 7.67 2 9V10H10V9C10 7.67 7.33 7 6 7Z" fill="#666"/>
+                                </svg>
+                            </div>
+                            <span class="author-name ms-2">By ${author}</span>
+                        </div>
+                    </div>
+                    
+                    <h1 class="mb-4">${title}</h1>
+                    
+                    <div class="article-content">
+                        ${fullContent}
+                    </div>
+                    
+                    ${relatedCount > 0 ? relatedArticlesHTML : ''}
+                </div>
+            `;
+
+            const detailContent = document.getElementById('detailContent');
+            detailContent.innerHTML = detailHTML;
+
+            document.getElementById('gridView').style.display = 'none';
+            document.getElementById('detailView').style.display = 'block';
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showGrid() {
+            document.getElementById('gridView').style.display = 'block';
+            document.getElementById('detailView').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
