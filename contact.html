@@ -13,40 +13,38 @@
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
-        <div class="container">
-            <a href="index.html" class="navbar-brand logo">
-                <span class="logo-text">ADVANCE-IT Group</span>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Product
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="productDropdown">
-                            <li><a class="dropdown-item" href="https://advance-it-group.biz/software-testing-qa">Aurore sis</a></li>
-                            <li><a class="dropdown-item" href="https://datacentral.tech">Data Central</a></li>
-                            <li><a class="dropdown-item" href="https://erp.auroresuite.com">Aurore ERP</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo_light.png" alt="AITG Logo" style="height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sevices.html">Products and Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+            </ul>
+            <a class="btn btn-contact" href="contact.html">CONTACT</a>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <!-- HERO SECTION -->
-    <section class="contact-hero mx-3 mx-md-4 mx-lg-5 rounded" >
+    <section class="contact-hero mx-3 mx-md-4 mx-lg-5 rounded " >
         <div class="container">
             <div class="row justify-content-center"  data-aos="zoom-in">
                 <div class="col-md-8 text-center">
@@ -204,10 +202,10 @@
 </section>
 
     <!-- CTA -->
-    <section class="cta-section"  data-aos="zoom-in">
+    <section class="cta"  data-aos="zoom-in">
         <div class="container-small text-center">
-            <h2 class="text-white">Ready to boost your performance?</h2>
-            <p class="text-white-80">Let's discuss how ADVANCE-IT Group can transform your business.</p>
+            <h2 class="text-black">Ready to boost your performance?</h2>
+            <p class="text-black">Let's discuss how ADVANCE-IT Group can transform your business.</p>
         </div>
     </section>
 
@@ -296,8 +294,8 @@
 <script>
 AOS.init({
     duration: 1200,
-    once: false,
-    mirror: true
+    once: true,
+    mirror: false
 });
 </script>
 </body>
