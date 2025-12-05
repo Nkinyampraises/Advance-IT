@@ -2,11 +2,7 @@
 /* Custom Navbar Style */
 .navbar-custom {
     background-color: #fff !important;
-    border-radius: 50rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin: 1rem;
 }
 
 .navbar-custom .navbar-nav {
@@ -174,12 +170,8 @@ background:url("../images/gradeint.svg");
 }
 
 .service-icon.icon-1 { background: linear-gradient(45deg, #4c68d7, #6a82fb); }
-.service-icon.icon-2 { background: linear-gradient(45deg, #ef476f, #f78c6b); }
-.service-icon.icon-3 { background: linear-gradient(45deg, #5a5afb, #8d8dff); }
-.service-icon.icon-4 { background: linear-gradient(45deg, #f5a623, #f8c94e); }
-.service-icon.icon-5 { background: linear-gradient(45deg, #7f5af0, #a186f2); }
-.service-icon.icon-6 { background: linear-gradient(45deg, #20c997, #48e5b8); }
-
+.service-icon.icon-2 { background: #4A7C8C;}
+.service-icon.icon-3 { background:  #084144;  }
 
 .service-card .card-title {
     font-weight: 400;
@@ -725,9 +717,6 @@ background: linear-gradient(312deg, #2c38de, #328cb3, #5d53ed);
 
 .social-btn.facebook { background-color: #3b5998; }
 .social-btn.linkedin { background-color: #0077b5; }
-.social-btn.twitter { background-color: #000000; }
-.social-btn.instagram { background-color: #e4405f; }
-
 .social-btn:hover {
     opacity: 0.8;
 }
@@ -764,11 +753,11 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.image-wrapper {
+/*.image-wrapper {
     position: relative;
     height: 220px;
     overflow: hidden;
-}
+}*/
 
 .news-card img {
     width: 100%;
@@ -844,6 +833,82 @@ body {
     font-size: 13px;
     color: #0066FF;
 }
+.blog-post-image-wrapper .img-fluid {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blog-post-content {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+        .single-blog-image {
+            height: 500px; /* Increased from 500px to 600px */
+            width: auto; /* Full width of container */
+            max-width:4000px; /* Maximum width for very large screens */
+            margin: 0 auto; /* Center the image */
+            object-fit: cover;
+            border-radius: 12px;
+            display: block; /* Ensure proper block display */
+        }
+
+        .single-blog-content {
+            background: none;
+            border: none;
+            box-shadow: none;
+            padding: 0;
+        }
+
+        .single-blog-content h5 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .single-blog-content p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Remove card styling from detail view */
+        .detail-view .card,
+        .detail-view .detail-card {
+            background: none;
+            border: none;
+            box-shadow: none;
+        }
+
+        /* Ensure related cards still look good */
+        .related-card {
+            transition: transform 0.3s ease;
+        }
+
+        .related-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Adjust hero section for single blog */
+        .contact-hero {
+            transition: all 0.3s ease;
+        }
+        
+        /* Make the image wrapper full width */
+        .image-wrapper {
+            width: 100%;
+            position: relative;
+        }
+        
+        /* Adjust badge position for larger image */
+        .image-wrapper .badge-category {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
 
 /* Detail Page Styles */
 .detail-view {
@@ -862,7 +927,7 @@ body {
     background: none;
     border: none;
     color: #0066FF;
-    font-size: 16px;
+    font-size: 10px;
     cursor: pointer;
     padding: 0;
     text-decoration: none;
@@ -1024,15 +1089,6 @@ body {
 .related-card:hover {
     transform: translateY(-3px);
 }
-
-
-
-
-
-
-
-/* ... existing code ... */
-
 /*--------------------------------------------------------------
 # Hero Services Section
 --------------------------------------------------------------*/
@@ -1197,3 +1253,68 @@ body {
     z-index: 1;
   }
 }
+.service-image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        
+        .service-image-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+            color: white;
+            padding: 60px 20px 20px 20px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        /* Alternative style for better visibility */
+        .service-image-container::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            z-index: 1;
+        }
+        
+        .service-image-title {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            color: white;
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: left;
+            z-index: 2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            margin: 0;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .service-image-title {
+                font-size: 1.5rem;
+                bottom: 15px;
+                left: 15px;
+                right: 15px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .service-image-title {
+                font-size: 1.2rem;
+                bottom: 10px;
+                left: 10px;
+                right: 10px;
+            }
+        }
+    

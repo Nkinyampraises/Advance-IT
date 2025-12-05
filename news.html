@@ -1,4 +1,3 @@
-
 <!DOCTYPE html> 
 <html lang="en">
 <head>
@@ -15,7 +14,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-    <div class="container-fluid">
+    <div class="container">
         <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo_light.png" alt="AITG Logo" style="height: 40px;">
         </a>
@@ -38,7 +37,7 @@
                     <a class="nav-link" href="news.html">News</a>
                 </li>
             </ul>
-            <a class="btn btn-contact" href="contact.html">CONTACT</a>
+            <a class="btn btn-contact mb-lg-1" href="contact.html">CONTACT</a>
         </div>
     </div>
 </nav>
@@ -238,11 +237,9 @@
 
     <div id="detailView" class="detail-view" style="display: none;">
         <div class="container py-5">
-            <div class="row justify-content-center mt-4">
-                <div class="col-lg-8">
-                    <div class="card detail-card" id="detailContent">
-                        <!-- Article details will be inserted here -->
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10" id="detailContent">
+                    <!-- Article details will be inserted here -->
                 </div>
             </div>
         </div>
@@ -316,7 +313,7 @@
         <div class="row align-items-center">
 
             <div class="col-md-6" data-aos="fade-right">
-                <h2 class="fw-bold display-5">Obtain further information by making a contact with our experienced IT staffs.</h2>
+                <h2 class="fw-bold display-5">Contact us for further information</h2>
                 <p class="fw-bold mt-4">Ready to boost your performance?</p>
                 <p class="text-muted">Let's discuss how we can help transform your business</p>
             </div>
@@ -325,7 +322,7 @@
                 <i class="fas fa-phone-alt fs-1 text-primary"></i>
                 <p class="mt-3 mb-0">Reach out now!</p>
                 <h3 class="fw-bold my-2">+237 696 099 939</h3>
-                <a href="#" class="btn btn-primary mt-3">Contact us</a>
+                <a href="contact.html" class="btn btn-primary mt-3">Contact us</a>
             </div>
 
         </div>
@@ -358,7 +355,7 @@
                 <h5 class="fw-bold mb-4 text-white">Quick links</h5>
                 <ul class="list-unstyled">
                     <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-                    <li class="mb-2"><a href="" class="text-white text-decoration-none">Products</a></li>
+                    <li class="mb-2"><a href="sevices.html" class="text-white text-decoration-none">services</a></li>
                     <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">About</a></li>
                     <li class="mb-2"><a href="news.html" class="text-white text-decoration-none">News</a></li>
                     <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
@@ -448,40 +445,30 @@ AOS.init({
             }
             const fullContent = fullContentDiv.innerHTML;
 
-            let relatedArticlesHTML = '<h3 class="mt-5 mb-4">Related Articles</h3><div class="row">';
-            let relatedCount = 0;
-            
-            allCards.forEach((card) => {
-                if (card !== selectedCard && relatedCount < 3) {
-                    const relatedImg = card.querySelector('img').src;
-                    const relatedTitle = card.querySelector('.card-title').textContent.trim();
-                    const relatedOnclick = card.getAttribute('onclick');
-                    
-                    const match = relatedOnclick.match(/showDetail\((\d+)\)/);
-                    if (match) {
-                        const relatedId = match[1];
-                        
-                        relatedArticlesHTML += `
-                            <div class="col-md-4 mb-4">
-                                <div class="related-card" onclick="showDetail(${relatedId})" style="cursor: pointer;">
-                                    <img src="${relatedImg}" alt="${relatedTitle}" class="img-fluid rounded" style="height: 150px; width: 100%; object-fit: cover; margin-bottom: 10px;">
-                                    <h6 style="font-size: 14px; font-weight: 600;">${relatedTitle}</h6>
-                                </div>
+            // Update the hero section with article title
+            const heroSection = document.querySelector('.contact-hero');
+            if (heroSection) {
+                heroSection.innerHTML = `
+                    <div class="container">
+                        <div class="row justify-content-center" data-aos="zoom-in">
+                            <div class="col-md-8 text-center">
+                                <h1 class="text-white">${title}</h1>
+                                <p class="text-white">${excerpt}</p>
                             </div>
-                        `;
-                        relatedCount++;
-                    }
-                }
-            });
-            
-            relatedArticlesHTML += '</div>';
+                        </div>
+                    </div>
+                `;
+            }
+
+            // REMOVED: Related articles section generation
 
             const detailHTML = `
-                <div class="image-wrapper">
-                    <img src="${image}" alt="${imageAlt}" class="img-fluid rounded" style="width: 100%; height: 400px; object-fit: cover;">
+                <div class="image-wrapper mb-4">
+                    <img src="${image}" alt="${imageAlt}" class="img-fluid w-100 single-blog-image">
                     <span class="badge-category">${category}</span>
                 </div>
-                <div class="card-body p-4">
+                
+                <div class="article-header mb-4">
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <div class="date-info d-flex align-items-center">
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -498,15 +485,13 @@ AOS.init({
                             <span class="author-name ms-2">By ${author}</span>
                         </div>
                     </div>
-                    
-                    <h1 class="mb-4">${title}</h1>
-                    
-                    <div class="article-content">
-                        ${fullContent}
-                    </div>
-                    
-                    ${relatedCount > 0 ? relatedArticlesHTML : ''}
                 </div>
+                
+                <div class="article-content single-blog-content">
+                    ${fullContent}
+                </div>
+                
+                <!-- REMOVED: Related articles section -->
             `;
 
             const detailContent = document.getElementById('detailContent');
@@ -521,8 +506,25 @@ AOS.init({
         function showGrid() {
             document.getElementById('gridView').style.display = 'block';
             document.getElementById('detailView').style.display = 'none';
+            
+            // Restore original hero section
+            const heroSection = document.querySelector('.contact-hero');
+            if (heroSection) {
+                heroSection.innerHTML = `
+                    <div class="container">
+                        <div class="row justify-content-center" data-aos="zoom-in">
+                            <div class="col-md-8 text-center">
+                                <h1 class="text-white">Welcome to our News area</h1>
+                                <p class="text-white">Stay informed with what's going on with Advance-IT. Latest updates, insights, and success stories from the world of enterprise technology.</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
+    
 </body>
 </html>
